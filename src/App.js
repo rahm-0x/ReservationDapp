@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import CarTile from './CarTile';
 import carData from './data';
-import carouselData from './carouselData'; // This should be the path to your carousel data file
-import "slick-carousel/slick/slick.css"; // Default styling
-import "slick-carousel/slick/slick-theme.css"; // Theme styling
-import './App.css'; // Custom styling
+import carouselData from './carouselData';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './App.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -14,7 +14,6 @@ function App() {
     setActiveTab(tabName);
   };
 
-  // Carousel settings
   const settings = {
     dots: true,
     infinite: true,
@@ -23,13 +22,11 @@ function App() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    // More settings if needed
   };
 
   return (
     <div className="app">
       <header className="header">
-
         <nav>
           <ul className="nav-links">
             <li><a href="#home" className={activeTab === 'home' ? 'active' : ''} onClick={() => handleTabClick('home')}>Home</a></li>
@@ -40,16 +37,15 @@ function App() {
         </nav>
         <img src='/assets/cars-img/mmctransparent.png' alt="MMC Rentals" className="logo" />
         <nav>
-        <ul className="nav-links2">
+          <ul className="nav-links2">
             <li><a href="https://twitter.com/nftmmc" className={activeTab === 'twitter' ? 'active' : ''} onClick={() => handleTabClick('twitter')}>Twitter</a></li>
             <li><a href="https://www.instagram.com/nftmmc" className={activeTab === 'instagram' ? 'active' : ''} onClick={() => handleTabClick('instagram')}>Instagram</a></li>
             <li><a href="#about" className={activeTab === 'about' ? 'active' : ''} onClick={() => handleTabClick('about')}>About</a></li>
             <li><a href="#contact" className={activeTab === 'contact' ? 'active' : ''} onClick={() => handleTabClick('contact')}>Contact</a></li>
-            </ul>
+          </ul>
         </nav>
       </header>
 
-      {/* Carousel/Slideshow */}
       <div className="carousel-container">
         <Slider {...settings}>
           {carouselData.map(slide => (

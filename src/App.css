@@ -1,11 +1,16 @@
 /* App.css */
 
+body {
+  background-color: black; /* Set the background color for the entire body */
+  margin: 0; /* Remove body margin */
+  padding: 0; /* Remove body padding */
+}
 
 .app {
   text-align: center;
-  background-color: black;
-  background: black;
   color: white;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
 }
 
 .header {
@@ -29,10 +34,8 @@
 }
 
 .carousel-container {
-  padding-top: 170px; /* This value may need to be adjusted if the header height changes */
+  padding-top: 170px;
 }
-
-
 
 .nav-links {
   font-size: small;
@@ -40,7 +43,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center;
 }
 
 .nav-links2 {
@@ -49,7 +52,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center;
 }
 
 .nav-links li,
@@ -69,15 +72,14 @@
   color: #9fc9eb;
 }
 
-
 .car-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* This will create a responsive grid */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
 .footer {
-  background-color: #000; /* Dark background for the footer */
+  background-color: #000;
   padding: 20px;
 }
