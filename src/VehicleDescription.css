@@ -1,0 +1,33 @@
+/* VehicleDescription.css */
+
+.vehicle .container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: auto;
+    padding: 20px;
+}
+
+.vehicle img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.vehicle h1 {
+    color: #fff; /* White text */
+}
+
+.vehicle h1 .text-primary {
+    color: #3490dc; /* Primary color text */
+}
+
+.btn-outline-primary {
+    border-color: #3490dc;
+    color: #3490dc;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3490dc;
+    color: #fff;
+}
+
+/* Add more styles as needed */

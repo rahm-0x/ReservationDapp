@@ -1,23 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Slider from 'react-slick';
+import CarTile from './CarTile';
+import carData from './data';
+import carouselData from './carouselData'; // This should be the path to your carousel data file
+import "slick-carousel/slick/slick.css"; // Default styling
+import "slick-carousel/slick/slick-theme.css"; // Theme styling
+import './App.css'; // Custom styling
 
 function App() {
+  const [activeTab, setActiveTab] = useState('home');
+
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName);
+  };
+
+  // Carousel settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    // More settings if needed
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="header">
+        <img src='/assets/cars-img/mmctransparent.png' alt="MMC Rentals" className="logo" />
+        <nav>
+          <ul className="nav-links">
+            <li><a href="#home" className={activeTab === 'home' ? 'active' : ''} onClick={() => handleTabClick('home')}>Home</a></li>
+            <li><a href="#photos" className={activeTab === 'photos' ? 'active' : ''} onClick={() => handleTabClick('photos')}>Photos</a></li>
+            <li><a href="#videos" className={activeTab === 'videos' ? 'active' : ''} onClick={() => handleTabClick('videos')}>Videos</a></li>
+            <li><a href="#shop" className={activeTab === 'shop' ? 'active' : ''} onClick={() => handleTabClick('shop')}>Shop</a></li>
+          </ul>
+        </nav>
       </header>
+
+      {/* Carousel/Slideshow */}
+      <div className="carousel-container">
+        <Slider {...settings}>
+          {carouselData.map(slide => (
+            <div key={slide.id}>
+              <img src={slide.src} alt={slide.alt} style={{ width: '100%', display: 'block' }} />
+            </div>
+          ))}
+        </Slider>
+      </div>
+
+      <div className="car-grid">
+        {carData.map(car => (
+          <CarTile key={car.id} name={car.name} brand={car.brand} imageUrl={car.imageUrl} />
+        ))}
+      </div>
+
+      <footer className="footer">
+        {/* Footer content here */}
+      </footer>
     </div>
   );
 }

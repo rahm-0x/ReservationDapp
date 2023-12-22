@@ -1,0 +1,41 @@
+/* CarTile.css */
+.car-tile {
+    width: 300px; /* Adjust to your preference */
+    margin: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Removed padding-left: 50%; */
+    /* Add display flex to align items vertically */
+    display: flex;
+    flex-direction: column; /* Stack image and info on top of each other */
+    align-items: center; /* Center align the flex items */
+  }
+  
+  .car-image {
+    height: 210px; 
+    width: 100%; /* Make width 100% to use the full width of the car-tile */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+  }
+  
+  .car-info {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%; /* Use the full width of the car-tile */
+  }
+  
+  .car-maker {
+    text-align: center;
+    color: #9fc9eb;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%; /* Use the full width of the car-tile */
+  }
+  

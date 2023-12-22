@@ -1,38 +1,72 @@
-.App {
+/* App.css */
+
+
+.app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: black;
+  background: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 999;
+  padding: 5px 10px;  /* Reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.logo {
+  margin: 0 auto; /* Center the logo horizontally */
+  height: 150px; /* Adjust based on your actual logo size */
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-container {
+  padding-top: 170px; /* This value may need to be adjusted if the header height changes */
+}
+
+
+
+.nav-links {
+  position: absolute;
+  font-size: small;
+  left: 200px; /* Position the nav links on the left */
+  transform: none; /* Remove the centering transformation */
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Reset margin */
+}
+
+.nav-links li {
+  padding: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a.active {
+  color: #9fc9eb; /* Highlight color, you can replace it with your chosen color */
+}
+
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* This will create a responsive grid */
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #000; /* Dark background for the footer */
+  padding: 20px;
 }
