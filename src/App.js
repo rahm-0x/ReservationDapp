@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <img src='/assets/cars-img/mmctransparent.png' alt="MMC Rentals" className="logo" />
+
         <nav>
           <ul className="nav-links">
             <li><a href="#home" className={activeTab === 'home' ? 'active' : ''} onClick={() => handleTabClick('home')}>Home</a></li>
@@ -37,6 +37,15 @@ function App() {
             <li><a href="#videos" className={activeTab === 'videos' ? 'active' : ''} onClick={() => handleTabClick('videos')}>Videos</a></li>
             <li><a href="#shop" className={activeTab === 'shop' ? 'active' : ''} onClick={() => handleTabClick('shop')}>Shop</a></li>
           </ul>
+        </nav>
+        <img src='/assets/cars-img/mmctransparent.png' alt="MMC Rentals" className="logo" />
+        <nav>
+        <ul className="nav-links2">
+            <li><a href="https://twitter.com/nftmmc" className={activeTab === 'twitter' ? 'active' : ''} onClick={() => handleTabClick('twitter')}>Twitter</a></li>
+            <li><a href="https://www.instagram.com/nftmmc" className={activeTab === 'instagram' ? 'active' : ''} onClick={() => handleTabClick('instagram')}>Instagram</a></li>
+            <li><a href="#about" className={activeTab === 'about' ? 'active' : ''} onClick={() => handleTabClick('about')}>About</a></li>
+            <li><a href="#contact" className={activeTab === 'contact' ? 'active' : ''} onClick={() => handleTabClick('contact')}>Contact</a></li>
+            </ul>
         </nav>
       </header>
 

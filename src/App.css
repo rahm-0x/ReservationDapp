@@ -15,15 +15,16 @@
   width: 100%;
   background-color: #000;
   z-index: 999;
-  padding: 5px 10px;  /* Reduced padding */
+  padding: 5px 185px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
 }
+
 .logo {
-  margin: 0 auto; /* Center the logo horizontally */
-  height: 150px; /* Adjust based on your actual logo size */
+  margin: 0 auto;
+  height: 150px;
   width: auto;
 }
 
@@ -34,28 +35,38 @@
 
 
 .nav-links {
-  position: absolute;
   font-size: small;
-  left: 200px; /* Position the nav links on the left */
-  transform: none; /* Remove the centering transformation */
-  display: flex;
   list-style: none;
   padding: 0;
-  margin: 0; /* Reset margin */
+  margin: 0;
+  display: flex;
+  align-items: center; /* Center vertically */
 }
 
-.nav-links li {
-  padding: 0 20px;
+.nav-links2 {
+  font-size: small;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Center vertically */
 }
 
-.nav-links a {
+.nav-links li,
+.nav-links2 li {
+  padding: 0 10px;
+}
+
+.nav-links a,
+.nav-links2 a {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
-.nav-links a.active {
-  color: #9fc9eb; /* Highlight color, you can replace it with your chosen color */
+.nav-links a.active,
+.nav-links2 a.active {
+  color: #9fc9eb;
 }
 
 

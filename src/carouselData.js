@@ -7,7 +7,44 @@ const carouselData = [
     },
     {
       id: 2,
+      src: '/assets/slider-img/slider-2.jpg',
+      alt: 'Luxury Rolls Royce',
+      caption: 'Rolls Royce Phantom'
+    },
+
+    {
+      id: 3,
       src: '/assets/slider-img/slider-3.jpg',
+      alt: 'Luxury Rolls Royce',
+      caption: 'Rolls Royce Phantom'
+    },
+    {
+      id: 5,
+      src: '/assets/slider-img/slider-5.jpg',
+      alt: 'Luxury Rolls Royce',
+      caption: 'Rolls Royce Phantom'
+    },
+    {
+      id: 6,
+      src: '/assets/slider-img/slider-6.jpg',
+      alt: 'Luxury Rolls Royce',
+      caption: 'Rolls Royce Phantom'
+    },
+    {
+      id: 7,
+      src: '/assets/slider-img/slider-7.png',
+      alt: 'Luxury Rolls Royce',
+      caption: 'Rolls Royce Phantom'
+    },
+    {
+      id: 8,
+      src: '/assets/slider-img/slider-8.png',
+      alt: 'Luxury Rolls Royce',
+      caption: 'Rolls Royce Phantom'
+    },
+    {
+      id: 9,
+      src: '/assets/slider-img/slider-9.png',
       alt: 'Luxury Rolls Royce',
       caption: 'Rolls Royce Phantom'
     },
