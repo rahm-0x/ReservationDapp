@@ -19,12 +19,6 @@ const carouselData = [
       caption: 'Rolls Royce Phantom'
     },
     {
-      id: 5,
-      src: '/assets/slider-img/slider-5.jpg',
-      alt: 'Luxury Rolls Royce',
-      caption: 'Rolls Royce Phantom'
-    },
-    {
       id: 6,
       src: '/assets/slider-img/slider-6.jpg',
       alt: 'Luxury Rolls Royce',
