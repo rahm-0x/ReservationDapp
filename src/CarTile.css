@@ -23,7 +23,6 @@
   .car-info {
     text-align: center;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    padding: 8px;
     font-size: 1.1em;
     font-weight: bold;
     width: 100%; /* Use the full width of the car-tile */

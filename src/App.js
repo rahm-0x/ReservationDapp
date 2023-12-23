@@ -32,7 +32,7 @@ function App() {
             <li><a href="#home" className={activeTab === 'home' ? 'active' : ''} onClick={() => handleTabClick('home')}>Home</a></li>
             <li><a href="#photos" className={activeTab === 'photos' ? 'active' : ''} onClick={() => handleTabClick('photos')}>Photos</a></li>
             <li><a href="#videos" className={activeTab === 'videos' ? 'active' : ''} onClick={() => handleTabClick('videos')}>Videos</a></li>
-            <li><a href="#shop" className={activeTab === 'shop' ? 'active' : ''} onClick={() => handleTabClick('shop')}>Shop</a></li>
+            <li><a href="#fleet" className={activeTab === 'fleet' ? 'active' : ''} onClick={() => handleTabClick('fleet')}>Fleet</a></li>
           </ul>
         </nav>
         <img src='/assets/cars-img/mmctransparent.png' alt="MMC Rentals" className="logo" />
@@ -56,7 +56,7 @@ function App() {
         </Slider>
       </div>
 
-      <div className="car-grid">
+      <div className="car-grid" id="fleet">
         {carData.map(car => (
           <CarTile key={car.id} name={car.name} brand={car.brand} imageUrl={car.imageUrl} />
         ))}
