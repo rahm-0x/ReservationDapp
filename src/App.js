@@ -27,21 +27,103 @@ function App() {
   return (
     <div className="app">
       <header className="header">
+        {/* Left and Center Nav Links */}
         <nav>
-          <ul className="nav-links">
-            <li><a href="#home" className={activeTab === 'home' ? 'active' : ''} onClick={() => handleTabClick('home')}>Home</a></li>
-            <li><a href="#photos" className={activeTab === 'photos' ? 'active' : ''} onClick={() => handleTabClick('photos')}>Photos</a></li>
-            <li><a href="#videos" className={activeTab === 'videos' ? 'active' : ''} onClick={() => handleTabClick('videos')}>Videos</a></li>
-            <li><a href="#fleet" className={activeTab === 'fleet' ? 'active' : ''} onClick={() => handleTabClick('fleet')}>Fleet</a></li>
+          <ul className="nav-links" style={{ fontSize: '16px' }}>
+            <li>
+              <a
+                href="#home"
+                className={activeTab === 'home' ? 'active' : ''}
+                onClick={() => handleTabClick('home')}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#photos"
+                className={activeTab === 'photos' ? 'active' : ''}
+                onClick={() => handleTabClick('photos')}
+              >
+                Photos
+              </a>
+            </li>
+            <li>
+              <a
+                href="#videos"
+                className={activeTab === 'videos' ? 'active' : ''}
+                onClick={() => handleTabClick('videos')}
+              >
+                Videos
+              </a>
+            </li>
           </ul>
         </nav>
-        <img src='/assets/cars-img/mmctransparent.png' alt="MMC Rentals" className="logo" />
+        <img
+          src="/assets/cars-img/mmctransparent.png"
+          alt="MMC Rentals"
+          className="logo"
+        />
+        {/* Right Nav Links with Icons */}
         <nav>
           <ul className="nav-links2">
-            <li><a href="https://twitter.com/nftmmc" className={activeTab === 'twitter' ? 'active' : ''} onClick={() => handleTabClick('twitter')}>Twitter</a></li>
-            <li><a href="https://www.instagram.com/nftmmc" className={activeTab === 'instagram' ? 'active' : ''} onClick={() => handleTabClick('instagram')}>Instagram</a></li>
-            <li><a href="#about" className={activeTab === 'about' ? 'active' : ''} onClick={() => handleTabClick('about')}>About</a></li>
-            <li><a href="#contact" className={activeTab === 'contact' ? 'active' : ''} onClick={() => handleTabClick('contact')}>Contact</a></li>
+            <li>
+              <a
+                href="https://x.com/MMCHighlife"
+                onClick={() => handleTabClick('twitter')}
+                className={activeTab === 'twitter' ? 'active' : ''}
+              >
+                <img
+                  src="/assets/icons/TWITTER.png"
+                  alt="Twitter"
+                  style={{ width: '70px', height: '70px', objectFit: 'contain' }}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/mmchighlife/"
+                onClick={() => handleTabClick('instagram')}
+                className={activeTab === 'instagram' ? 'active' : ''}
+              >
+                <img
+                  src="/assets/icons/INSTAGRAM.png"
+                  alt="Instagram"
+                  style={{ width: '70px', height: '70px', objectFit: 'contain' }}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                onClick={() => handleTabClick('about')}
+                className={activeTab === 'about' ? 'active' : ''}
+              >
+                <img
+                  src="/assets/icons/TURO.png"
+                  alt="TURO"
+                  style={{ width: '70px', height: '70px', objectFit: 'contain' }}
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className={activeTab === 'about' ? 'about' : ''}
+                onClick={() => handleTabClick('about')}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className={activeTab === 'contact' ? 'contact' : ''}
+                onClick={() => handleTabClick('contact')}
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </nav>
       </header>

@@ -1,4 +1,3 @@
-/* App.css */
 
 body {
   background-color: black; /* Set the background color for the entire body */
@@ -37,8 +36,11 @@ body {
   padding-top: 170px;
 }
 
+.nav-links, .nav-links2 {
+  font-size: 14px; /* or 0.875rem */
+}
+
 .nav-links {
-  font-size: small;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -47,7 +49,6 @@ body {
 }
 
 .nav-links2 {
-  font-size: small;
   list-style: none;
   padding: 0;
   margin: 0;
