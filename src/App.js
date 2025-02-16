@@ -74,9 +74,9 @@ function App() {
                 className={activeTab === 'twitter' ? 'active' : ''}
               >
                 <img
-                  src="/assets/icons/TWITTER.png"
+                  src="/assets/icons/xwhite.png"
                   alt="Twitter"
-                  style={{ width: '70px', height: '70px', objectFit: 'contain' }}
+                  style={{ width: '20px', height: '20px', objectFit: 'contain' }}
                 />
               </a>
             </li>
@@ -87,25 +87,13 @@ function App() {
                 className={activeTab === 'instagram' ? 'active' : ''}
               >
                 <img
-                  src="/assets/icons/INSTAGRAM.png"
+                  src="/assets/icons/instagramwhite.png"
                   alt="Instagram"
-                  style={{ width: '70px', height: '70px', objectFit: 'contain' }}
+                  style={{ width: '30px', height: '30px', objectFit: 'contain' }}
                 />
               </a>
             </li>
-            <li>
-              <a
-                href="#about"
-                onClick={() => handleTabClick('about')}
-                className={activeTab === 'about' ? 'active' : ''}
-              >
-                <img
-                  src="/assets/icons/TURO.png"
-                  alt="TURO"
-                  style={{ width: '70px', height: '70px', objectFit: 'contain' }}
-                />
-              </a>
-            </li>
+          
             <li>
               <a
                 href="#about"
